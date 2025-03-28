@@ -175,13 +175,23 @@ const isTodayMyBirthday = () => {
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
 const deleteProp = function (obj, str) {
-  obj.str = ;
   return obj;
 };
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
-
+const newestMovie = () => {
+  let newestYear = parseInt(movies[0].Year);
+  let movie = {};
+  movies.forEach((obj, i) => {
+    let year = parseInt(obj.Year);
+    if (newestYear < year) {
+      newestYear = year;
+      movie = obj;
+    }
+  });
+  return movie;
+};
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */
