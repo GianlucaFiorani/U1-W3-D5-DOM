@@ -175,6 +175,7 @@ const isTodayMyBirthday = () => {
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
 const deleteProp = function (obj, str) {
+  delete obj[`${str}`];
   return obj;
 };
 /* ESERCIZIO 12
