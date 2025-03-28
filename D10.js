@@ -337,11 +337,27 @@ const halfTree = (n) => {
   *****
 
 */
-
+const tree = (n) => {
+  for (let i = 0; i < n; i++) {
+    console.log(" ");
+    for (let j = 0; j <= i; j++) {
+      console.log("*");
+    }
+    console.log(" ");
+  }
+};
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
-
+const isItPrime = (n) => {
+  const div = [];
+  for (let i = n; i > 0; i--) {
+    if (n % i === 0) {
+      div.push(i);
+    }
+  }
+  return !(div.length > 2);
+};
 /* Questo array viene usato per gli esercizi. Non modificarlo. */
 
 const movies = [
