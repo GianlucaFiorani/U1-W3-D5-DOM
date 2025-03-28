@@ -320,11 +320,11 @@ const classAdd = () => {
 */
 const halfTree = (n) => {
   for (let i = 0; i < n; i++) {
-    for (let j = 0; j < i; j++) {
+    for (let j = 0; j <= i; j++) {
       console.log("*");
     }
+    console.log(" ");
   }
-  console.log("");
 };
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
